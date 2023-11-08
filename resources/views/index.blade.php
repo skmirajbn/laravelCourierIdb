@@ -172,25 +172,29 @@
                 <div class="w-1/2 space-y-8">
                     <div class="">
                         <h5>পণ্যের ওজন ( সর্বোচ্চ 10 কেজি )</h5>
-                        <input class="w-full" type="text" placeholder="পন্যের ওজন লিখুন">
+                        <input type="text" placeholder="পন্যের ওজন লিখুন" class="input input-bordered w-full max-w-xs" />
                     </div>
                     <div class="">
                         <h5>পিক-আপ এলাকা</h5>
-                        <select class="w-full" value="">
-                            <option name="" id="">পিকআপের এলাকা নির্বাচন করুন</option>
-                        </select>
+                        <select class="select select-bordered w-full max-w-xs">
+                            <option disabled selected>পিকআপের এলাকা নির্বাচন করুন</option>
+                            <option>Han Solo</option>
+                            <option>Greedo</option>
+                          </select>
                     </div>
                 </div>
                 <div class="w-1/2 space-y-8">
                     <div class="">
                         <h5>পণ্যের বিক্রয়মূল্য</h5>
-                        <input class="w-full" type="text" placeholder="পন্যের বিক্রয়মূল্য লিখুন">
+                        <input type="text" placeholder="পন্যের বিক্রয়মূল্য লিখুন" class="input input-bordered w-full max-w-xs" />
                     </div>
                     <div class="">
                         <h5>ডেলিভারি এলাকা</h5>
-                        <select class="w-full" value="">
-                            <option name="" id="">ডেলিভারি এলাকা নির্বাচন করুন</option>
-                        </select>
+                        <select class="select select-bordered w-full max-w-xs">
+                            <option disabled selected>ডেলিভারির এলাকা নির্বাচন করুন</option>
+                            <option>Han Solo</option>
+                            <option>Greedo</option>
+                          </select>
                     </div>
                 </div>
             </div>
@@ -242,7 +246,7 @@
         </section>
         <section class="container space-y-12 py-10">
             <h2 class="text-4xl text-center font-bold">আপনার সকল জিজ্ঞাসা</h2>
-            <p>সর্বাধিক জিজ্ঞাসিত প্রশ্নগুলি দেখুন, যেকোনো প্রয়োজনে আমরা আপনার পাশে আছি</p>
+            <p class="text-center font-bold">সর্বাধিক জিজ্ঞাসিত প্রশ্নগুলি দেখুন, যেকোনো প্রয়োজনে আমরা আপনার পাশে আছি</p>
             <div class="w-1/2 space-y-4 mx-auto">
                 <div class="collapse collapse-arrow bg-base-200">
                     <input type="radio" name="my-accordion-2" checked="checked" /> 
@@ -335,7 +339,7 @@
           </div>
         </section>
         <footer class="bg-gray-100 py-28">
-            <div class="container gap-10 flex justify-between">
+            <div class="container gap-10 flex justify-between px-16">
                 <div class="space-y-5">
                     <img src="images/new-redx-logo.svg" alt="">
                     <p>দ্রুততম সল্যুশনের জন্য রেডএক্স অ্যাপটি ডাউনলোড করুন</p>
@@ -358,7 +362,7 @@
                    <p>contact@redx.com.bd</p>
                 </div>
                 <div class="space-y-5">
-                    <h3 class="font-bold">যোগাযোগ</h3>
+                    <h3 class="font-bold">সংযুক্ত হন</h3>
                     <div class="flex gap-4">
                         <img src="images/social/fb-icon.svg" alt="">
                         <img src="images/social/linkedIn-icon.svg" alt="">
