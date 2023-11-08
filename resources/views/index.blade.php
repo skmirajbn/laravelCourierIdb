@@ -200,6 +200,61 @@
         </section>
         <section class="container space-y-12 py-10">
             <h2 class="text-4xl text-center font-bold">রেডএক্সের প্রতি গ্রাহকদের ভালোবাসা</h2>
+            <div class="flex gap-3">
+                <div class="w-1/3 border border-gray-300 p-6 space-y-2">
+                    <div class="block"><button class="bg-gray-300 px-2 py-1">SME</button></div>
+                    <i class="fa-solid fa-quote-left text-4xl text-red-600"></i>
+                    <p>লজিস্টিকস পার্টনার হিসেবে রেডএক্স আমাদের বিশ্বস্ত ও গুরুত্বপূর্ণ অংশীদার। আমাদের পথচলায় রেডএক্সকে সবসময়ই অত্যন্ত প্রফেশনাল এবং আন্তরিক সাপোর্ট পেয়েছি।</p>
+                    <div class="flex gap-4">
+                        <img class="w-20" src="images/client/client-love1.webp" alt="">
+                        <div>
+                            <h2 class="font-bold">আবদুল্লাহ আল মোনায়েম</h2>
+                            <p>আলফা কনজুমার ফুড</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="w-1/3 border border-gray-300 p-6 space-y-2">
+                    <div class="block"><button class="bg-gray-300 px-2 py-1">SME</button></div>
+                    <i class="fa-solid fa-quote-left text-4xl text-red-600"></i>
+                    <p>লজিস্টিকস পার্টনার হিসেবে রেডএক্স আমাদের বিশ্বস্ত ও গুরুত্বপূর্ণ অংশীদার। আমাদের পথচলায় রেডএক্সকে সবসময়ই অত্যন্ত প্রফেশনাল এবং আন্তরিক সাপোর্ট পেয়েছি।</p>
+                    <div class="flex gap-4">
+                        <img class="w-20" src="images/client/client-love1.webp" alt="">
+                        <div>
+                            <h2 class="font-bold">আবদুল্লাহ আল মোনায়েম</h2>
+                            <p>আলফা কনজুমার ফুড</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="w-1/3 border border-gray-300 p-6 space-y-2">
+                    <div class="block"><button class="bg-gray-300 px-2 py-1">SME</button></div>
+                    <i class="fa-solid fa-quote-left text-4xl text-red-600"></i>
+                    <p>লজিস্টিকস পার্টনার হিসেবে রেডএক্স আমাদের বিশ্বস্ত ও গুরুত্বপূর্ণ অংশীদার। আমাদের পথচলায় রেডএক্সকে সবসময়ই অত্যন্ত প্রফেশনাল এবং আন্তরিক সাপোর্ট পেয়েছি।</p>
+                    <div class="flex gap-4">
+                        <img class="w-20" src="images/client/client-love1.webp" alt="">
+                        <div>
+                            <h2 class="font-bold">আবদুল্লাহ আল মোনায়েম</h2>
+                            <p>আলফা কনজুমার ফুড</p>
+                        </div>
+                    </div>
+                </div>
+                
+            </div>
+        </section>
+        <section class="container space-y-12 py-10">
+            <h2 class="text-4xl text-center font-bold">আপনার সকল জিজ্ঞাসা</h2>
+            <p>সর্বাধিক জিজ্ঞাসিত প্রশ্নগুলি দেখুন, যেকোনো প্রয়োজনে আমরা আপনার পাশে আছি</p>
+            <div>
+                <div className="card w-96 bg-base-100 shadow-xl">
+                    <figure><img src="/images/stock/photo-1606107557195-0e29a4b5b4aa.jpg" alt="Shoes" /></figure>
+                    <div className="card-body">
+                      <h2 className="card-title">Shoes!</h2>
+                      <p>If a dog chews shoes whose shoes does he choose?</p>
+                      <div className="card-actions justify-end">
+                        <button className="btn btn-primary">Buy Now</button>
+                      </div>
+                    </div>
+                </div>
+            </div>
         </section>
     </main>
 </body>
