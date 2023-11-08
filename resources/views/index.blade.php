@@ -243,36 +243,131 @@
         <section class="container space-y-12 py-10">
             <h2 class="text-4xl text-center font-bold">আপনার সকল জিজ্ঞাসা</h2>
             <p>সর্বাধিক জিজ্ঞাসিত প্রশ্নগুলি দেখুন, যেকোনো প্রয়োজনে আমরা আপনার পাশে আছি</p>
-            <div>
+            <div class="w-1/2 space-y-4 mx-auto">
                 <div class="collapse collapse-arrow bg-base-200">
                     <input type="radio" name="my-accordion-2" checked="checked" /> 
                     <div class="collapse-title text-xl font-medium">
-                      Click to open this one and close others
+                        রেডএক্স কি?
                     </div>
                     <div class="collapse-content"> 
-                      <p>hello</p>
+                      <p>রেডএক্স একটি প্রযুক্তিনির্ভর লজিস্টিকস কোম্পানি যা দেশজুড়ে এসএমই প্রোডাক্ট ডেলিভারি সেবা থেকে শুরু করে ব্যাক্তিগত ডকুমেন্ট, পার্সেল ডেলিভারি, এবং বড় কর্পোরেট কোম্পানিগুলোকে ইন্ডাস্ট্রিয়াল লজিস্টিকস সেবা প্রদান করে থাকে।</p>
                     </div>
                 </div>
                 <div class="collapse collapse-arrow bg-base-200">
                     <input type="radio" name="my-accordion-2" /> 
                     <div class="collapse-title text-xl font-medium">
-                      Click to open this one and close others
+                        রেডএক্স কি কি ধরনের সেবা দিয়ে থাকে?
                     </div>
                     <div class="collapse-content"> 
-                      <p>hello</p>
+                      <p>যে কোন ব্যবসা বা ব্যক্তিগত প্রয়োজনে ডেলিভারি সংক্রান্ত সেবা প্রদানের একটি পূর্ণাঙ্গ প্ল্যাটফর্ম রেডএক্স। পার্সেল ডেলিভারি, বাল্ক শিপমেন্ট, লাইন হল, ট্রাক ভাড়া, লোডিং-আনলোডিং, ওয়্যারহাউজ, সার্ভিস হিসেবে লজিস্টিকস সল্যুশন এবং প্রয়োজন অনুযায়ী কাস্টমাইজড সল্যুশনও দিয়ে থাকে রেডএক্স।</p>
                     </div>
                 </div>
                 <div class="collapse collapse-arrow bg-base-200">
                     <input type="radio" name="my-accordion-2" /> 
                     <div class="collapse-title text-xl font-medium">
-                      Click to open this one and close others
+                        রেডএক্স ডেলিভারির কভারেজ এরিয়া কি?
                     </div>
                     <div class="collapse-content"> 
-                      <p>hello</p>
+                      <p>রেডএক্স বাংলাদেশের ৬৪ টি জেলায় ডেলিভারি করে। আমাদের ডেলিভারি এরিয়া জানতে লিঙ্কে ক্লিক করুন https://redx.com.bd/coverage-area আপনার নিকটস্থ রেডএক্স হাবে যোগাযোগ করে আজই ডেলিভারি বুক করুন। রেডএক্স হাবের সম্পূর্ণ লিস্ট দেখতে এখানে ক্লিক করুন</p>
+                    </div>
+                </div>
+                <div class="collapse collapse-arrow bg-base-200">
+                    <input type="radio" name="my-accordion-2" /> 
+                    <div class="collapse-title text-xl font-medium">
+                        আপনাদের লজিস্টিকস চার্জ সম্পর্কে জানতে চাই?
+                    </div>
+                    <div class="collapse-content"> 
+                      <p>মার্চেন্টদের পার্সেল ডেলিভারিতে আমরা প্রতি কেজি অনুযায়ী চার্জ করে থাকি l ঢাকার ভেতরে প্রতি কেজি ৬৯ টাকা, ঢাকার আশেপাশে ১১৫ এবং ঢাকার বাইরে ১৫০ টাকা থেকে চার্জ শুরু হয়। ঢাকার আশেপাশে এবং বাইরে প্রতি ডেলিভারিতে ১% ক্যাশ অন ডেলিভারি চার্জ প্রযোজ্য। প্রতিটি চার্জের সাথে ভ্যাট সংযুক্ত।
+
+                        ব্যক্তিগত পার্সেল পাঠানোর চার্জ সম্পর্কে জানতে আমাদের হোম ডেলিভারি এবং হাব ডেলিভারির প্রাইস চার্টটি দেখুন।
+                        
+                        এন্টারপ্রাইজ লজিস্টিকসের জন্য আমাদের দক্ষ সেলস টিম রয়েছে। ০৯৬১০০০৭৩৩৯ নাম্বারে কল দিয়ে এ সংক্রান্ত সকল তথ্য পাবেন।
+                        
+                        অনুগ্রহপূর্বক মনে রাখবেন ওজন এবং অবস্থানের ভিত্তিতে ডেলিভারি চার্জ পরিবর্তন হতে পারে  এ বিষয়ে আরও বিস্তারিত জানতে লিঙ্কে ক্লিক করুন এবং আমাদের প্রাইস সম্পর্কে আরো বিস্তারিত জানুন।</p>
                     </div>
                 </div>
             </div>
         </section>
+        <section class="container flex bg-black text-white py-12 px-16 gap-6 items-center">
+            <div class="w-1/2">
+                <div class="mx-auto">
+                    <h2 class="text-4xl font-bold">রেডএক্সের পার্টনার হোন আজই</h2>
+                    <p class="font-bold">সাইন-আপ করুন করুন মাত্র দুই মিনিটে</p>
+                </div>
+            </div>
+            <div class="w-1/2">
+                <button class="bg-red-600 px-12 py-4 rounded-lg block mx-auto w-fit">সাইন-আপ কারুন</button>
+            </div>
+        </section>
+        <section class="container space-y-12 py-20">
+          <h2 class="text-4xl text-center font-bold">মিডিয়াতে রেডএক্স</h2>
+          <div class="grid grid-cols-3 gap-6">
+            <div class="border border-gray-300 rounded-lg p-8 space-y-3">
+                <img class="w-48" src="images/media/Redx-news3.webp" alt="">
+                <p>September 7, 2021</p>
+                <h3 class="text-xl font-bold">Commerce platform Shopup raises $75 million in Bangladesh</h3>
+            </div>
+            <div class="border border-gray-300 rounded-lg p-8 space-y-3">
+                <img class="w-48" src="images/media/Redx-news4.png" alt="">
+                <p>September 7, 2021</p>
+                <h3 class="text-xl font-bold">Commerce platform Shopup raises $75 million in Bangladesh</h3>
+            </div>
+            <div class="border border-gray-300 rounded-lg p-8 space-y-3">
+                <img class="w-48" src="images/media/Redx-news2.png" alt="">
+                <p>September 7, 2021</p>
+                <h3 class="text-xl font-bold">Commerce platform Shopup raises $75 million in Bangladesh</h3>
+            </div>
+            <div class="border border-gray-300 rounded-lg p-8 space-y-3">
+                <img class="w-48" src="images/media/Redx-news5.png" alt="">
+                <p>September 7, 2021</p>
+                <h3 class="text-xl font-bold">Commerce platform Shopup raises $75 million in Bangladesh</h3>
+            </div>
+            <div class="border border-gray-300 rounded-lg p-8 space-y-3">
+                <img class="w-48" src="images/media/Redx-news1.png" alt="">
+                <p>September 7, 2021</p>
+                <h3 class="text-xl font-bold">Commerce platform Shopup raises $75 million in Bangladesh</h3>
+            </div>
+            <div class="border border-gray-300 rounded-lg p-8 space-y-3">
+                <img class="w-48" src="images/media/Redx-news2.png" alt="">
+                <p>September 7, 2021</p>
+                <h3 class="text-xl font-bold">Commerce platform Shopup raises $75 million in Bangladesh</h3>
+            </div>
+          </div>
+        </section>
+        <footer class="bg-gray-100 py-28">
+            <div class="container gap-10 flex justify-between">
+                <div class="space-y-5">
+                    <img src="images/new-redx-logo.svg" alt="">
+                    <p>দ্রুততম সল্যুশনের জন্য রেডএক্স অ্যাপটি ডাউনলোড করুন</p>
+                    <img src="images/google-play-badge.svg" alt="">
+                </div>
+                <div class="space-y-5">
+                    <h3 class="font-bold">গুরুত্বপূর্ণ লিংক</h3>
+                    <div class="flex flex-col gap-3">
+                        <a href="">কুরিয়ার</a>
+                        <a href="">এন্টারপ্রাইজ</a>
+                        <a href="">কভারেজ এরিয়া</a>
+                        <a href="">প্রাইভেসী পলিসি</a>
+                        <a href="">FAQ</a>
+                    </div>
+                </div>
+                <div class="space-y-5">
+                    <h3 class="font-bold">যোগাযোগ</h3>
+                   <p>শপআপ, ৪র্থ তলা, এসকেএস <br> টাওয়ার, ৭ ভিআইপি রোড, মহাখালী, <br> ঢাকা</p>
+                   <p>০৯৬১০০০৭৩৩৯</p>
+                   <p>contact@redx.com.bd</p>
+                </div>
+                <div class="space-y-5">
+                    <h3 class="font-bold">যোগাযোগ</h3>
+                    <div class="flex gap-4">
+                        <img src="images/social/fb-icon.svg" alt="">
+                        <img src="images/social/linkedIn-icon.svg" alt="">
+                        <img src="images/social/yt-icon.svg" alt="">
+                    </div>
+                    <p class="text-xs text-gray-600">© Redx 2023. All Rights reserved</p>
+                </div>
+            </div>
+        </footer>
     </main>
 </body>
 </html>
