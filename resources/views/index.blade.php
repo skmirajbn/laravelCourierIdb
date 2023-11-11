@@ -21,7 +21,7 @@
             </div>
             <div class="w-1/2 flex justify-end items-center gap-6">
                 <p> <i class="fa-solid fa-phone text-red-600"></i> কল করুন ০৯৬১০০০৭৩৩৯</p>
-                <button class="px-8 py-2 border-2 rounded-lg border-red-600">লগ ইন</button>
+                <a href="{{url('/login')}}" class="px-8 py-2 border-2 rounded-lg border-red-600">লগ ইন</a>
                 <div><i class="fa-solid fa-globe"></i> EN</div>
             </div>
         </header>
@@ -50,7 +50,7 @@
                             </h3>
                             <input class="w-full border-none focus:border-none p-2 text-black" placeholder="ফোন নাম্বার" type="text">
                         </div>
-                        <button class="bg-red-600 w-full py-2 rounded-lg">সাইন আপ</button>
+                        <a href="{{url('register')}}" class="block text-center bg-red-600 w-full py-2 rounded-lg">সাইন আপ</a>
                         <h3 class="text-center">অথবা,</h3>
                         <h2 class="text-center">ট্রাক মুভমেন্ট স্ট্যাটাস</h2>
                         <div class="flex bg-white rounded-md overflow-hidden pl-2">
@@ -241,7 +241,6 @@
                         </div>
                     </div>
                 </div>
-                
             </div>
         </section>
         <section class="container space-y-12 py-10">
