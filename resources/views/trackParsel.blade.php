@@ -7,10 +7,14 @@
 
     <div class="py-12">
         <div class="max-w-7xl mx-auto sm:px-6 lg:px-8">
-            <div class="bg-white dark:bg-gray-800 overflow-hidden shadow-sm sm:rounded-lg">
-                <div class="p-6 text-gray-900 dark:text-gray-100">
-                    {{ __("You're logged in!") }}
-                </div>
+            <div class="bg-white dark:bg-gray-800 overflow-hidden shadow-sm sm:rounded-lg py-12">
+                <div class="p-6 text-gray-900 dark:text-gray-100 flex flex-col gap-6">
+                   <h2 class="text-3xl font-bold text-center">পার্সেল ট্রাক করুন <i class="fa-solid fa-truck"></i></h2>
+                   <div class="w-full flex justify-center items-center gap-3">
+                        <x-text-input class="border-2 border-red-600" disabled="" placeholder="পার্সেল আইডি লিখুন" />
+                        <x-primary-button class="py-3 px-6">Track</x-primary-button>
+                    </div>
+               </div>
             </div>
         </div>
     </div>

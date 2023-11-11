@@ -11,7 +11,7 @@
                         </a>
                     </div>
                     <div>
-                        <x-primary-button> <i class="fa-solid fa-magnifying-glass text-white mr-2"></i> Track Parsel</x-primary-button>
+                       <a href="{{ route('trackParsel') }}"> <x-primary-button> <i class="fa-solid fa-magnifying-glass text-white mr-2"></i> Track Parsel</x-primary-button></a>
                     </div>
                 </div>
 
