@@ -14,7 +14,7 @@
                         <x-text-input class="border-2 border-red-600" disabled="" placeholder="পার্সেল আইডি লিখুন" />
                         <x-primary-button class="py-3 px-6">Track</x-primary-button>
                     </div>
-                    <div>
+                    <div class="mx-auto">
                         <x-bladewind.timeline
                             date="18-JUL"
                             label="You signed up"
