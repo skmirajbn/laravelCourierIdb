@@ -20,6 +20,11 @@ Route::get('/', function () {
 Route::get('track-parsel', function () {
     return view('trackParsel');
 })->name('trackParsel');
+
+Route::get('payments', function () {
+    return view('payments');
+})->name('payments');
+
 Route::get('parsel-list', function () {
 
     $countries = [
