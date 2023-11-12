@@ -20,6 +20,20 @@ Route::get('/', function () {
 Route::get('track-parsel', function () {
     return view('trackParsel');
 })->name('trackParsel');
+Route::get('parsel-list', function () {
+
+    $countries = [
+        ['label' => 'Benin', 'value' => 'bj'],
+        ['label' => 'Burkina Faso', 'value' => 'bf'],
+        ['label' => 'Ghana', 'value' => 'gh'],
+        ['label' => 'Nigeria', 'value' => 'ng'],
+        ['label' => 'Kenya', 'value' => 'ke']
+    ];
+    $data = [
+        'countries' => $countries
+    ];
+    return view('parselList', $data);
+})->name('parselList');
 
 
 Route::get('/dashboard', function () {

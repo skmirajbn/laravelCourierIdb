@@ -18,17 +18,20 @@
                         <x-bladewind.timeline
                             date="18-JUL"
                             label="You signed up"
-                            completed="true" />
+                            completed="true"
+                            color="red" />
 
                         <x-bladewind.timeline
                             date="19-JUL"
                             label="Customer rep assigned"
-                            completed="true" />
+                            completed="true"
+                            color="blue" />
 
                         <x-bladewind.timeline
                             date="20-JUL"
                             label="Customer rep called"
-                            completed="true" />
+                            completed="true" 
+                            color="green"/>
 
                         <x-bladewind.timeline label="Account is being reviewed" />
 
