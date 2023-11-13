@@ -47,10 +47,15 @@
                                     <div class="bg-green-600 w-6 h-4 flex justify-center items-center">
                                         <div class="bg-red-600 w-2 h-2 rounded-full"></div>
                                     </div>
-                                    +880
+                                    +88
                                 </h3>
                                 <input class="w-full border-none focus:border-none p-2 text-black" placeholder="ফোন নাম্বার" type="text" name="phone">
+                       
                             </div>
+                            @foreach ($errors->all() as $error)
+                                <span class="text-red-500">{{ $error }}</span><br>
+                            @endforeach
+
                             <button type="submit" class="block text-center bg-red-600 w-full py-2 rounded-lg">সাইন আপ</button>
                             <h3 class="text-center">অথবা,</h3>
                             <h2 class="text-center">ট্রাক মুভমেন্ট স্ট্যাটাস</h2>

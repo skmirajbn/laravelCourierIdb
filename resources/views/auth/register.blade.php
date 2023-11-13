@@ -1,7 +1,6 @@
 <x-guest-layout>
     <form method="POST" action="{{ route('register') }}">
         @csrf
-
         <!-- Name -->
         <div>
             <x-input-label for="name" :value="__('Name')" />
@@ -16,12 +15,12 @@
             <x-input-error :messages="$errors->get('email')" class="mt-2" />
         </div>
 
-        <!-- Phone Number -->
-        <div class="mt-4">
-            <x-input-label for="phone" :value="__('Phone')" />
-            <x-text-input id="phone" class="block mt-1 w-full" type="text" name="phone" :value="old('phone')" required autocomplete="username" />
-            <x-input-error :messages="$errors->get('email')" class="mt-2" />
-        </div>
+     <!-- Phone Number -->
+     <div class="mt-4">
+         <x-input-label for="phone" :value="__('Phone')" />
+        <x-text-input id="phone" class="block mt-1 w-full bg-gray-300" type="text" name="phone" :value="$phone ? $phone : old('phone')" required autocomplete="phone" readonly />
+         <x-input-error :messages="$errors->get('phone')" class="mt-2" />
+     </div>
 
         <!-- Password -->
         <div class="mt-4">
