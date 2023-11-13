@@ -27,18 +27,7 @@ Route::get('payments', function () {
 })->name('payments');
 
 Route::get('parsel-list', function () {
-
-    $countries = [
-        ['label' => 'Benin', 'value' => 'bj'],
-        ['label' => 'Burkina Faso', 'value' => 'bf'],
-        ['label' => 'Ghana', 'value' => 'gh'],
-        ['label' => 'Nigeria', 'value' => 'ng'],
-        ['label' => 'Kenya', 'value' => 'ke']
-    ];
-    $data = [
-        'countries' => $countries
-    ];
-    return view('parselList', $data);
+    return view('parselList');
 })->name('parselList');
 
 
@@ -50,6 +39,7 @@ Route::middleware('auth')->group(function () {
     Route::get('/profile', [ProfileController::class, 'edit'])->name('profile.edit');
     Route::patch('/profile', [ProfileController::class, 'update'])->name('profile.update');
     Route::delete('/profile', [ProfileController::class, 'destroy'])->name('profile.destroy');
+    Route::patch('/profileAvatar', [ProfileController::class, 'updateAvatar'])->name('profile.updateAvatar');
 });
 
 
