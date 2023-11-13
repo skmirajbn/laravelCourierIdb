@@ -39,25 +39,27 @@
                     </div>
                 </div>
                 <div class="w-1/3 bg-black text-white flex justify-center items-center rounded-bl-3xl">
-                    <div class="space-y-3">
-                        <h3 class="text-center">বিনামূল্যে সাইন আপ করুন মাত্র দুই মিনিটে</h3>
-                        <div class="flex bg-white rounded-md overflow-hidden px-2 border-2 border-red-500">
-                            <h3 class="bg-white text-black flex items-center">
-                                <div class="bg-green-600 w-6 h-4 flex justify-center items-center">
-                                    <div class="bg-red-600 w-2 h-2 rounded-full"></div>
-                                </div>
-                                +880
-                            </h3>
-                            <input class="w-full border-none focus:border-none p-2 text-black" placeholder="ফোন নাম্বার" type="text">
+                    <form action="{{route('register')}}">
+                        <div class="space-y-3">
+                            <h3 class="text-center">বিনামূল্যে সাইন আপ করুন মাত্র দুই মিনিটে</h3>
+                            <div class="flex bg-white rounded-md overflow-hidden px-2 border-2 border-red-500">
+                                <h3 class="bg-white text-black flex items-center">
+                                    <div class="bg-green-600 w-6 h-4 flex justify-center items-center">
+                                        <div class="bg-red-600 w-2 h-2 rounded-full"></div>
+                                    </div>
+                                    +880
+                                </h3>
+                                <input class="w-full border-none focus:border-none p-2 text-black" placeholder="ফোন নাম্বার" type="text" name="phone">
+                            </div>
+                            <button type="submit" class="block text-center bg-red-600 w-full py-2 rounded-lg">সাইন আপ</button>
+                            <h3 class="text-center">অথবা,</h3>
+                            <h2 class="text-center">ট্রাক মুভমেন্ট স্ট্যাটাস</h2>
+                            <div class="flex bg-white rounded-md overflow-hidden pl-2">
+                                <input class="w-full border-none focus:border-none p-2 text-black" placeholder="ট্রাকিং আইডি দিন" type="text">
+                                <button class="bg-red-600 px-6">ট্রাক</button>
+                            </div>
                         </div>
-                        <a href="{{url('register')}}" class="block text-center bg-red-600 w-full py-2 rounded-lg">সাইন আপ</a>
-                        <h3 class="text-center">অথবা,</h3>
-                        <h2 class="text-center">ট্রাক মুভমেন্ট স্ট্যাটাস</h2>
-                        <div class="flex bg-white rounded-md overflow-hidden pl-2">
-                            <input class="w-full border-none focus:border-none p-2 text-black" placeholder="ট্রাকিং আইডি দিন" type="text">
-                            <button class="bg-red-600 px-6">ট্রাক</button>
-                        </div>
-                    </div>
+                    </form>
                 </div>
             </div>
         </section>

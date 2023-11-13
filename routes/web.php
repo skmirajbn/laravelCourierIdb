@@ -17,6 +17,7 @@ use Illuminate\Support\Facades\Route;
 Route::get('/', function () {
     return view('index');
 })->name('home');
+
 Route::get('track-parsel', function () {
     return view('trackParsel');
 })->name('trackParsel');
