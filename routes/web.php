@@ -1,7 +1,9 @@
 <?php
 
+use App\Http\Controllers\AdminController;
 use App\Http\Controllers\ParcelController;
 use App\Http\Controllers\ProfileController;
+use App\Http\Middleware\CheckAdminRole;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -45,10 +47,8 @@ Route::middleware('auth')->group(function () {
 });
 
 // create route group which will for for /admin
-Route::group(['prefix' => 'management', 'as' => 'admin.'], function () {
-    Route::get('/', function () {
-        return view('admin.index');
-    })->name('index');
+Route::group(['prefix' => 'management', 'as' => 'admin.', 'middleware' => ['auth', CheckAdminRole::class]], function () {
+    Route::get('/', [AdminController::class, 'index'])->name('index');
 });
 
 

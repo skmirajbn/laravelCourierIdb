@@ -831,7 +831,7 @@
             "</tr>" + "</table>";
         }
         var table = $("#example").DataTable({
-            ajax: "admin/js/data.txt",
+            ajax: "/admin/js/data.txt",
             columns: [
                 { data: "Quote" },
                 { data: "Product" },

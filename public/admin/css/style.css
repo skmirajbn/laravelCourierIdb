@@ -1,0 +1,17 @@
+/* li.nav-item {
+    background-color: red;
+} */
+
+.sidebar .nav .nav-item.active > .nav-link {
+    background: rgb(44, 44, 44);
+}
+.sidebar .nav:not(.sub-menu) > .nav-item > .nav-link[aria-expanded="true"] {
+    background-color: rgb(196, 42, 42);
+}
+.sidebar .nav:not(.sub-menu) > .nav-item:hover > .nav-link,
+.sidebar .nav:not(.sub-menu) > .nav-item:hover[aria-expanded="true"] {
+    background-color: rgb(61, 61, 61);
+}
+.sidebar .nav.sub-menu {
+    background-color: rgb(73, 73, 73);
+}

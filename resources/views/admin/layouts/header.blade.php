@@ -5,38 +5,39 @@
   <!-- Required meta tags -->
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  <title>Skydash Admin</title>
+  <title>Redx Management</title>
 
-  
+
   @vite(['resources/css/app.css', 'resources/js/app.js'])
 
 
   <!-- plugins:css -->
-  <link rel="stylesheet" href="admin/vendors/feather/feather.css">
-  <link rel="stylesheet" href="admin/vendors/ti-icons/css/themify-icons.css">
-  <link rel="stylesheet" href="admin/vendors/css/vendor.bundle.base.css">
+  <link rel="stylesheet" href="{{url("admin/vendors/feather/feather.css")}}">
+  <link rel="stylesheet" href="{{url("admin/vendors/ti-icons/css/themify-icons.css")}}">
+  <link rel="stylesheet" href="{{url("admin/vendors/css/vendor.bundle.base.css")}}">
   <!-- endinject -->
   <!-- Plugin css for this page -->
-  <link rel="stylesheet" href="admin/vendors/datatables.net-bs4/dataTables.bootstrap4.css">
-  <link rel="stylesheet" href="admin/vendors/ti-icons/css/themify-icons.css">
-  <link rel="stylesheet" type="text/css" href="admin/js/select.dataTables.min.css">
+  <link rel="stylesheet" href="{{url("admin/vendors/datatables.net-bs4/dataTables.bootstrap4.css")}}">
+  <link rel="stylesheet" href="{{url("admin/vendors/ti-icons/css/themify-icons.css")}}">
+  <link rel="stylesheet" type="text/css" href="{{url("admin/js/select.dataTables.min.css")}}">
   <!-- End plugin css for this page -->
   <!-- inject:css -->
-  <link rel="stylesheet" href="admin/css/vertical-layout-light/style.css">
+  <link rel="stylesheet" href="{{url("admin/css/vertical-layout-light/style.css")}}">
   <!-- endinject -->
-  <link rel="shortcut icon" href="admin/images/favicon.png" />
+  <link rel="shortcut icon" href="images/new-redx-logo.svg" />
 
   {{-- My scrips --}}
   
   @vite('resources/css/all.min.css')
+  <link rel="stylesheet" href="{{ url("admin/css/style.css") }}">
 </head>
 <body>
   <div class="container-scroller">
     <!-- partial:partials/_navbar.html -->
     <nav class="navbar col-lg-12 col-12 p-0 fixed-top d-flex flex-row">
       <div class="text-center navbar-brand-wrapper d-flex align-items-center justify-content-center">
-        <a class="navbar-brand brand-logo mr-5" href="index.html"><img src="admin/images/logo.svg" class="mr-2" alt="logo"/></a>
-        <a class="navbar-brand brand-logo-mini" href="index.html"><img src="admin/images/logo-mini.svg" alt="logo"/></a>
+        <a class="navbar-brand brand-logo mr-5" href="index.html"><img src="{{ url("images/new-redx-logo.svg") }}" class="mr-2" alt="logo"/></a>
+        <a class="navbar-brand brand-logo-mini" href="index.html"><img src="{{ url("images/new-redx-logo.svg") }}" alt="logo"/></a>
       </div>
       <div class="navbar-menu-wrapper d-flex align-items-center justify-content-end">
         <button class="navbar-toggler navbar-toggler align-self-center" type="button" data-toggle="minimize">
@@ -58,7 +59,7 @@
           <li class="nav-item dropdown">
             <a class="nav-link count-indicator dropdown-toggle" id="notificationDropdown" href="#" data-toggle="dropdown">
               <i class="icon-bell mx-0"></i>
-              <span class="count"></span>
+              <span class="count "></span>
             </a>
             <div class="dropdown-menu dropdown-menu-right navbar-dropdown preview-list" aria-labelledby="notificationDropdown">
               <p class="mb-0 font-weight-normal float-left dropdown-header">Notifications</p>
@@ -105,7 +106,7 @@
           </li>
           <li class="nav-item nav-profile dropdown">
             <a class="nav-link dropdown-toggle" href="#" data-toggle="dropdown" id="profileDropdown">
-              <img src="admin/images/faces/face28.jpg" alt="profile"/>
+              <img src="{{ url("admin/images/faces/face28.jpg") }}" alt="profile"/>
             </a>
             <div class="dropdown-menu dropdown-menu-right navbar-dropdown" aria-labelledby="profileDropdown">
               <a class="dropdown-item">
