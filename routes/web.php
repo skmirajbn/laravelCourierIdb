@@ -1,6 +1,6 @@
 <?php
 
-use App\Http\Controllers\ParselController;
+use App\Http\Controllers\ParcelController;
 use App\Http\Controllers\ProfileController;
 use Illuminate\Support\Facades\Route;
 
@@ -41,7 +41,7 @@ Route::middleware('auth')->group(function () {
     Route::patch('/profile', [ProfileController::class, 'update'])->name('profile.update');
     Route::delete('/profile', [ProfileController::class, 'destroy'])->name('profile.destroy');
     Route::patch('/profile-avatar-update', [ProfileController::class, 'updateAvatar'])->name('profile.profile-avatar-update');
-    Route::get('/create-parsel', [ParselController::class, 'create']);
+    Route::get('/create-parcel', [ParcelController::class, 'create'])->name('create-parcel');
 });
 
 

@@ -36,7 +36,7 @@
                         <div class="space-y-2">
                             <h3 class="text-2xl font-bold">পার্সেল তৈরী করুন</h3>
                             <p>আমাদের রাইডাররা আপনার পার্সেল আপনার পছন্দসই লোকেশণে পৌঁছে দিতে প্রস্তুত</p>
-                            <x-primary-button>Create Parsel</x-primary-button>
+                            <a href="{{ route('create-parcel') }}"><x-primary-button>Create Parsel</x-primary-button></a>
                         </div>
                     </div>
                 </div>
