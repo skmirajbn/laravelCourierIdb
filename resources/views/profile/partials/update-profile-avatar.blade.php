@@ -13,14 +13,14 @@
         @csrf
     </form>
 
-    <form method="post" action="{{ route('profile.profile-avatar-update') }}" class="mt-6 space-y-6">
+    <form method="post" action="{{ route('profile.profile-avatar-update') }}" enctype="multipart/form-data" class="mt-6 space-y-6">
         @csrf
         @method('patch')
 
         <div>
-            <img class="w-24 h-24 rounded-full object-cover mb-4" src="images/avatar.png" alt="">
-            <x-text-input id="avatar" name="avatar" type="file" class="mt-1 block w-full" :value="old('name', $user->name)" required autofocus autocomplete="name" />
-            <x-input-error class="mt-2" :messages="$errors->get('name')" />
+            <img class="w-24 h-24 rounded-full object-cover mb-4" src="{{ url('storage/'.auth()->user()->avatar) }}" alt="">
+            <x-text-input id="avatar" name="avatar" type="file" class="mt-1 block w-full" :value="old('avatar', $user->avatar)" required autofocus autocomplete="avatar" />
+            <x-input-error class="mt-2" :messages="$errors->get('avatar')" />
         </div>
 
         
