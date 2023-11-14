@@ -15,77 +15,86 @@
                     <form action="">
                         <div class="space-y-6">
                             <div>
-                                <div class="form-control w-full max-w-xs">
-                                    <label for="">শপ সিলেক্ট করুন</label>
-                                    <select class="select select-bordered">
-                                        <option disabled selected>Pick one</option>
-                                        <option>Star Wars</option>
+                                <div class="form-control w-full">
+                                    <label for="">শপ</label>
+                                    <select name="shop_id" class="select select-bordered">
+                                        <option disabled selected>শপ সিলেক্ট করুন</option>
+                                        <option value="1">Star Wars</option>
                                         <option>Harry Potter</option>
                                         <option>Lord of the Rings</option>
                                         <option>Planet of the Apes</option>
                                         <option>Star Trek</option>
                                     </select>
-    
                                 </div>
                             </div>
                             <div class="space-y-3">
                                 <h2 class="text-xl font-semibold">কাস্টমার ইনফরমেনশন</h2>
-    
+
                                 <div class="flex gap-6">
                                     <div class="w-full">
                                         <x-input-label value="নাম" />
-                                        <x-text-input class="w-full" disabled="" placeholder="গ্রাহকের নাম লিখুন" />
+                                        <x-text-input class="w-full" name="customer_name" disabled="" placeholder="গ্রাহকের নাম লিখুন" />
                                     </div>
                                     <div class="w-full">
-                                        <x-input-label value="নাম" />
-                                        <x-text-input class="w-full" disabled="" placeholder="ফোন নাম্বার লিখুন" />
+                                        <x-input-label value="ফোন" />
+                                        <x-text-input class="w-full" name="customer_phone" disabled="" placeholder="ফোন নাম্বার লিখুন" />
                                     </div>
                                 </div>
                             </div>
                             <div class="space-y-3">
                                 <h2 class="text-xl font-semibold">পার্সেল ইনফরমেনশন</h2>
-    
+
                                 <div class="flex gap-6">
                                     <div class="w-full">
                                         <x-input-label value="পার্সেল টাইপ" />
-                                        <select class="select select-bordered w-full">
+                                        <select class="select select-bordered w-full" name="parcel_type_id">
                                             <option disabled selected>পার্সেল টাইল সিলেক্ট করুন</option>
-                                            <option>Star Wars</option>
+                                            <option value="1">Star Wars</option>
                                             <option>Harry Potter</option>
                                             <option>Lord of the Rings</option>
                                             <option>Planet of the Apes</option>
                                             <option>Star Trek</option>
-                                          </select>
+                                        </select>
                                     </div>
                                     <div class="w-full">
                                         <x-input-label value="ওজন" />
-                                        <x-text-input class="w-full" disabled="" placeholder="পার্সেলের ওজন প্রবেশ করুন" />
+                                        <x-text-input class="w-full" name="parcel_weight" disabled=""
+                                            placeholder="পার্সেলের ওজন প্রবেশ করুন" />
                                     </div>
                                 </div>
                                 <div class="flex gap-6">
                                     <div class="w-full">
                                         <x-input-label value="জেলা" />
-                                        <select class="select select-bordered w-full">
+                                        <select class="select select-bordered w-full" name="district_id">
                                             <option disabled selected>জেলা সিলেক্ট করুন</option>
                                             <option>Star Wars</option>
                                             <option>Harry Potter</option>
                                             <option>Lord of the Rings</option>
                                             <option>Planet of the Apes</option>
                                             <option>Star Trek</option>
-                                          </select>
+                                        </select>
                                     </div>
                                     <div class="w-full">
                                         <x-input-label value="উপজেলা" />
-                                        <select class="select select-bordered w-full">
+                                        <select class="select select-bordered w-full" name="thana_id">
                                             <option disabled selected>উপজেলা সিলেক্ট করুন</option>
                                             <option>Star Wars</option>
                                             <option>Harry Potter</option>
                                             <option>Lord of the Rings</option>
                                             <option>Planet of the Apes</option>
                                             <option>Star Trek</option>
-                                          </select>
+                                        </select>
                                     </div>
                                 </div>
+                                <div class="flex gap-6">
+                                    <div class="w-full">
+                                        <x-input-label value="ঠিকানা" />
+                                        <textarea class="textarea textarea-bordered w-full" placeholder="পার্সেল ঠিকানা লিখুন"></textarea>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="w-full flex justify-center">
+                                <x-primary-button>Create Parcel</x-primary-button>
                             </div>
                         </div>
 
