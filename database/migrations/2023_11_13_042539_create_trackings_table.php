@@ -15,6 +15,7 @@ return new class extends Migration {
             $table->string('message');
             $table->integer('status');
             $table->integer('isLast');
+            $table->integer('parcel_id');
             $table->timestamps();
         });
     }

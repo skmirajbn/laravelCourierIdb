@@ -12,7 +12,6 @@ return new class extends Migration {
         Schema::create('parcels', function (Blueprint $table) {
             $table->id();
             $table->integer('shop_id');
-            $table->integer('tracking_id');
             $table->integer('parcel_type_id');
             $table->integer('thana_id');
             $table->string('address');
