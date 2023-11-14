@@ -11,16 +11,15 @@ return new class extends Migration {
     public function up(): void {
         Schema::create('parcels', function (Blueprint $table) {
             $table->id();
-            $table->integer('delivery_thana_id');
-            $table->string('delivery_address');
             $table->integer('shop_id');
             $table->integer('tracking_id');
-            $table->integer('pickup_thana_id');
-            $table->string('pickup_address');
-            $table->decimal('weight');
             $table->integer('parcel_type_id');
+            $table->integer('thana_id');
+            $table->string('address');
+            $table->decimal('weight');
             $table->integer('customer_id');
             $table->decimal('delivery_charge');
+            $table->string('status');
             $table->timestamps();
         });
     }

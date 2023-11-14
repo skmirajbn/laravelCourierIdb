@@ -12,6 +12,7 @@ return new class extends Migration {
         Schema::create('shops', function (Blueprint $table) {
             $table->id();
             $table->string('name');
+            $table->integer('thana_id');
             $table->string('address');
             $table->integer('user_id');
             $table->string('logo')->nullable();
