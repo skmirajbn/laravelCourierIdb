@@ -17,7 +17,9 @@ class ParcelController extends Controller {
      * Display a listing of the resource.
      */
     public function index() {
-        //
+        $parcels = Parcel::with('customer', 'shop', 'parcelType', 'thana')->get();
+        // dd($parcels->toArray());
+        return view('admin.pages.parcel.allParcels', compact('parcels'));
     }
 
     /**

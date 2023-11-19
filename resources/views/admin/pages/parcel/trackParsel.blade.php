@@ -11,8 +11,8 @@
                 <div class="flex flex-col gap-6 p-6 text-gray-900 dark:text-gray-100">
                    <h2 class="text-3xl font-bold text-center">পার্সেল ট্রাক করুন <i class="fa-solid fa-truck"></i></h2>
                    <div class="flex items-center justify-center w-full gap-3">
-                        <x-text-input class="border-2 border-red-600" value="{{ $parcel->id }}" placeholder="পার্সেল আইডি লিখুন"  />
-                        <x-primary-button class="px-6 py-3">Track</x-primary-button>
+                        <x-text-input id="parcelId" class="border-2 border-red-600" value="{{ $parcel->id }}" placeholder="পার্সেল আইডি লিখুন"  />
+                        <x-primary-button id="track" class="px-6 py-3">Track</x-primary-button>
                     </div>
                     <div class="mx-auto">
                         @foreach ($trackings as $tracking)
@@ -27,4 +27,13 @@
             </div>
         </div>
     </div>
+    @push('scripts')
+        <script>
+            document.getElementById('track').addEventListener('click', () => {
+                const parcelId = document.getElementById('parcelId').value;
+                window.location.href = `/track-parcel/${parcelId}`
+                
+            })
+        </script>
+    @endpush
 </x-app-layout>
