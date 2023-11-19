@@ -22,9 +22,6 @@ Route::get('/', function () {
     return view('index');
 })->name('home');
 
-Route::get('track-parsel', function () {
-    return view('trackParsel');
-})->name('trackParsel');
 
 Route::get('payments', function () {
     return view('payments');
@@ -46,12 +43,19 @@ Route::middleware('auth')->group(function () {
     Route::patch('/profile-avatar-update', [ProfileController::class, 'updateAvatar'])->name('profile.profile-avatar-update');
     // Parsel
     Route::get('/create-parcel', [ParcelController::class, 'create'])->name('create-parcel');
+    Route::post('/create-parcel', [ParcelController::class, 'store'])->name('store-parcel');
 
     //Shop
     Route::get('/create-shop', [ShopController::class, 'create'])->name('create-shop');
     Route::post('/create-shop', [ShopController::class, 'store'])->name('store-shop');
     Route::get('/shops', [ShopController::class, 'index'])->name('shops');
     Route::get('/shop/{shop}', [ShopController::class, 'show'])->name('shop');
+
+    // Tracking
+    Route::get('/track-parsel/', [ParcelController::class, 'trackParsel'])->name('track-parsel-form');
+    Route::get('/track-parsel/{parcel}', [ParcelController::class, 'trackParsel'])->name('track-parsel');
+
+
 
 });
 

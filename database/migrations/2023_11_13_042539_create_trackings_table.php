@@ -11,11 +11,11 @@ return new class extends Migration {
     public function up(): void {
         Schema::create('trackings', function (Blueprint $table) {
             $table->id();
-            $table->dateTime('datetime');
             $table->string('message');
             $table->integer('status');
             $table->integer('isLast');
             $table->integer('parcel_id');
+            $table->string('color');
             $table->timestamps();
         });
     }

@@ -4,14 +4,13 @@ namespace App\Http\Requests;
 
 use Illuminate\Foundation\Http\FormRequest;
 
-class StoreParcelRequest extends FormRequest
-{
+class StoreParcelRequest extends FormRequest {
     /**
      * Determine if the user is authorized to make this request.
      */
-    public function authorize(): bool
-    {
-        return false;
+    public function authorize(): bool {
+        //check if user is loggedin
+        return auth()->check();
     }
 
     /**
@@ -19,10 +18,11 @@ class StoreParcelRequest extends FormRequest
      *
      * @return array<string, \Illuminate\Contracts\Validation\ValidationRule|array<mixed>|string>
      */
-    public function rules(): array
-    {
+    public function rules(): array {
         return [
             //
         ];
     }
+
+
 }
