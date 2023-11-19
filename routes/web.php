@@ -3,6 +3,7 @@
 use App\Http\Controllers\AdminController;
 use App\Http\Controllers\ParcelController;
 use App\Http\Controllers\ProfileController;
+use App\Http\Controllers\ShopController;
 use App\Http\Middleware\CheckAdminRole;
 use Illuminate\Support\Facades\Route;
 
@@ -43,7 +44,15 @@ Route::middleware('auth')->group(function () {
     Route::patch('/profile', [ProfileController::class, 'update'])->name('profile.update');
     Route::delete('/profile', [ProfileController::class, 'destroy'])->name('profile.destroy');
     Route::patch('/profile-avatar-update', [ProfileController::class, 'updateAvatar'])->name('profile.profile-avatar-update');
+    // Parsel
     Route::get('/create-parcel', [ParcelController::class, 'create'])->name('create-parcel');
+
+    //Shop
+    Route::get('/create-shop', [ShopController::class, 'create'])->name('create-shop');
+    Route::post('/create-shop', [ShopController::class, 'store'])->name('store-shop');
+    Route::get('/shops', [ShopController::class, 'index'])->name('shops');
+    Route::get('/shop/{shop}', [ShopController::class, 'show'])->name('shop');
+
 });
 
 // create route group which will for for /admin

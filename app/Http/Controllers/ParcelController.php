@@ -18,7 +18,7 @@ class ParcelController extends Controller {
      * Show the form for creating a new resource.
      */
     public function create() {
-        return view('createParcel');
+        return view('admin.pages.parcel.createParcel');
     }
 
     /**

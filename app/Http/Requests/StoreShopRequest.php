@@ -4,13 +4,14 @@ namespace App\Http\Requests;
 
 use Illuminate\Foundation\Http\FormRequest;
 
-class StoreShopRequest extends FormRequest
-{
+class StoreShopRequest extends FormRequest {
     /**
      * Determine if the user is authorized to make this request.
      */
-    public function authorize(): bool
-    {
+    public function authorize(): bool {
+        if (auth()->check()) {
+            return true;
+        }
         return false;
     }
 
@@ -19,10 +20,12 @@ class StoreShopRequest extends FormRequest
      *
      * @return array<string, \Illuminate\Contracts\Validation\ValidationRule|array<mixed>|string>
      */
-    public function rules(): array
-    {
+    public function rules(): array {
         return [
-            //
+            'name' => 'required',
+            'thana_id' => 'required',
+            'address' => 'required',
+            'logo' => 'image|mimes:jpg|max:2048',
         ];
     }
 }
