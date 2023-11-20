@@ -96,7 +96,7 @@
             </a>
             <div class="collapse rounded-none" id="shops">
                 <ul class="nav flex-column sub-menu">
-                    <li class="nav-item"> <a class="nav-link" href="pages/ui-features/buttons.html">All</a></li>
+                    <li class="nav-item"> <a class="nav-link" href="{{ route('admin.all-shops') }}">All</a></li>
                 </ul>
             </div>
         </li>

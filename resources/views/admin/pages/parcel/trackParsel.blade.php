@@ -14,6 +14,21 @@
                         <x-text-input id="parcelId" class="border-2 border-red-600" value="{{ $parcel->id }}" placeholder="পার্সেল আইডি লিখুন"  />
                         <x-primary-button id="track" class="px-6 py-3">Track</x-primary-button>
                     </div>
+                    <div class="flex py-3">
+                        <div class="w-1/2 text-center">
+                            <h3 class="font-bold">পার্সেল বিস্তারিত</h3>
+                            <h3 class="my-2">Customer Name: {{ $parcel->customer->name }} </h3>
+                            <h3 class="my-2">Customer Phone: {{ $parcel->customer->phone }} </h3>
+                            <h3 class="my-2">Parcel Address: {{ $parcel->address }} </h3>
+                        </div>
+                    
+                        <div class="w-1/2 text-center">
+                            <h3 class="font-bold">শপ বিস্তারিত</h3>
+                            <h3 class="my-2">Shop Name: {{ $parcel->shop->name }} </h3>
+                            <h3 class="my-2">Shop Phone: {{ $parcel->shop->phone }} </h3>
+                            <h3 class="my-2">Shop Address: {{ $parcel->shop->address }} </h3>
+                        </div>
+                    </div>
                     <div class="mx-auto">
                         @foreach ($trackings as $tracking)
                             <x-bladewind.timeline
@@ -22,6 +37,8 @@
                                 completed="{{ $tracking->status }}"
                                 color="{{ $tracking->color }}" />
                         @endforeach
+
+                        
                     </div>
                </div>
             </div>

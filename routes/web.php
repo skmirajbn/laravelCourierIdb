@@ -60,6 +60,7 @@ Route::middleware('auth')->group(function () {
 // create route group which will for for /admin
 Route::group(['prefix' => 'management', 'as' => 'admin.', 'middleware' => ['auth', CheckAdminRole::class]], function () {
     Route::get('/', [AdminController::class, 'index'])->name('index');
+    Route::get('/all-shops', [AdminController::class, 'allShops'])->name('all-shops');
 });
 
 

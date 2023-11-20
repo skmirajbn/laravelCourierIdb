@@ -15,5 +15,8 @@ class Shop extends Model {
     public function thana() {
         return $this->belongsTo(Thana::class, 'thana_id');
     }
+    public function user() {
+        return $this->belongsTo(User::class, 'user_id');
+    }
 
 }
