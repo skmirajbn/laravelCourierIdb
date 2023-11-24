@@ -14,7 +14,7 @@ class ShopController extends Controller {
      * Display a listing of the resource.
      */
     public function index() {
-        $shops = Shop::with('thana.district', )->get();
+        $shops = Shop::with('thana.district', )->orderBy('created_at', 'desc')->get();
         return view('admin.pages.shop.userShops', compact('shops'));
     }
 

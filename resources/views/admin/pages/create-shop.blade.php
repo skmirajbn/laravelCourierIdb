@@ -86,7 +86,7 @@
                         })
                     })
                 })
-            }, 1);
+            }, 1000);
         </script>
     @endpush
 </x-app-layout>
